@@ -1,0 +1,9 @@
+stages:
+  data_ingestion:
+    cmd: python 01_data_ingestion.py
+    deps:
+      - 01_data_ingestion.py
+    params:
+      - size
+    outs:
+      - artifacts/data_ingestion/
